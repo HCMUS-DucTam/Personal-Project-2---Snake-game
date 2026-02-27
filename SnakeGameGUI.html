@@ -84,26 +84,12 @@ SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only
                 console.error(e.stack);
             }
         }
-      function resizeGame() {
-    const gameWidth = 900;
-    const gameHeight = 600;
-
-    const scaleX = window.innerWidth / gameWidth;
-    const scaleY = window.innerHeight / gameHeight;
-
-    const scale = Math.min(scaleX, scaleY);
-
-    document.getElementById("screen")
-        .style.transform = `scale(${scale})`;
-}
-
-window.addEventListener("resize", resizeGame);
-window.addEventListener("load", resizeGame);
     </script>
     <script src="SnakeGameGUI.js"></script>
     <script type="text/javascript" src="qtloader.js"></script>
   </body>
 </html>
+
 
 
 
